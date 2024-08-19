@@ -1,0 +1,70 @@
+/* src/components/HeaderComponent.css */
+.app-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure it's above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background */
+  }
+  
+  .header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .app-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent input background */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    margin-right: 15px;
+  }
+  
+  .search-input::placeholder {
+    color: white;
+  }
+  
+  .user-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .rainbow-text {
+    background: linear-gradient(to right, #6666ff, #0099ff , #ce1772, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 6s ease-in-out infinite;
+    background-size: 500% 100%;
+}
+
+  @keyframes rainbow { 
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+  }
+  

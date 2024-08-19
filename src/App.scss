@@ -1,0 +1,17 @@
+.bg-dark {
+  background-color: black;
+  color: white;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  .icon-padding {
+    padding-right: 15px;
+  }
+}
