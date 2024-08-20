@@ -9,7 +9,6 @@ import Spinner from "./Components/Spinner";
 import debounce from "lodash.debounce";
 import Message from "./Components/Message";
 
-const API_KEY = "f4a235cf49d0351b29b482adc3e2d0a5";
 const BASE_URL = "https://api.themoviedb.org/3";
 
 const App = () => {
@@ -39,7 +38,7 @@ const App = () => {
     try {
       const response = await axios.get(url, {
         params: {
-          api_key: API_KEY,
+          api_key: process.env.REACT_APP_API_KEY,
           language: "en-US",
           page: pageNumber,
         },

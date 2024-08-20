@@ -1,0 +1,44 @@
+/* src/styles/global.css */
+.transparent-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  .carousel-indicators { display: none; }
+
+  .movie-list-card{
+    position: relative;
+    .fav-icon{
+      position: absolute;
+      top:20px;
+      right:20px;
+      cursor: pointer;
+      .fa-heart{  
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        transition: font-size 50ms ease-in;
+       }
+
+       .fa-heart:hover{
+        font-size: 25px;
+      }
+
+      .fa-solid{
+         animation-name:appear-slow;
+         animation-duration: 400ms;
+         animation-timing-function: ease-in;
+      }
+
+      @keyframes appear-slow {
+        0%{font-size:30px; opacity:0.3}
+        50%{font-size:25px; opacity:0.5}
+        100%{font-size:20px; opacity: 1;}
+      }
+
+    }
+
+  }
+

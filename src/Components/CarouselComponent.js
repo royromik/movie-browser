@@ -1,6 +1,6 @@
 // src/components/CarouselComponent.js
 import React from "react";
-import "../Styles/CarouselComponent.css";
+import "../Styles/CarouselComponent.scss";
 import { Carousel } from "react-bootstrap";
 
 const CarouselComponent = ({ movies }) => {

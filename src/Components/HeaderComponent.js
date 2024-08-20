@@ -1,6 +1,6 @@
 // src/components/HeaderComponent.js
 import React, { useState } from "react";
-import "../Styles/HeaderComponent.css"; // Import the CSS file
+import "../Styles/HeaderComponent.scss"; // Import the CSS file
 
 const HeaderComponent = ({ onSearch }) => {
   const [searchVal, setSearchVal] = useState("");

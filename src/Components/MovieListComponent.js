@@ -5,15 +5,9 @@ import { Card, Row, Col, Container } from "react-bootstrap";
 
 const MovieListComponent = ({ movies, setFavourites, favouriteMovies }) => {
   const listRef = useRef(null);
-  // const [favMovies,setFavMovies] = useState(favouriteMovies)
   const handleFavourites = (id) => {
     setFavourites(id);
   };
-
-  // useEffect(() => {
-  // setFavMovies(favouriteMovies);
-  // console.log("called",favMovies);
-  // }, [favouriteMovies]);
 
   return (
     <Container>
